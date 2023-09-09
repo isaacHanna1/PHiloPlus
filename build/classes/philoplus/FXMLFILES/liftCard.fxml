@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="philoplus.FXMLFILES.LiftCardController">
+   <top>
+      <HBox prefHeight="39.0" prefWidth="1081.0" BorderPane.alignment="CENTER">
+         <children>
+            <ButtonBar prefHeight="39.0" prefWidth="1097.0">
+              <buttons>
+                  <Button mnemonicParsing="false">
+                     <graphic>
+                        <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#loadFollowingCard" prefHeight="10.0" prefWidth="153.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="75.0" text="متابعة مصعد " />
+                              <ImageView fitHeight="29.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/elevator.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="37.0">
+                     <graphic>
+                        <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#loadCreateLiftSubcard" prefHeight="29.0" prefWidth="141.0">
+                           <children>
+                              <Label text="أنشاء مصعد " />
+                              <ImageView fitHeight="29.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/elevator-2.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Button>
+                <Button mnemonicParsing="false">
+                     <graphic>
+                        <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#loadStageOfLiftSubcard" prefHeight="10.0" prefWidth="153.0">
+                           <children>
+                              <Label onMouseClicked="#loadStageOfLiftSubcard" text="مراحل التسليم المصاعد" />
+                              <ImageView fitHeight="29.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/timeline.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="37.0">
+                     <graphic>
+                        <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#loadTypeOfLiftSubcard" prefHeight="29.0" prefWidth="141.0">
+                           <children>
+                              <Label text="انواع المصاعد " />
+                              <ImageView fitHeight="29.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/elevator.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vboxContainer" alignment="TOP_RIGHT" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#loadStageOfLiftSubcard" onScrollStarted="#loadStageOfLiftSubcard" prefHeight="529.0" prefWidth="1081.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

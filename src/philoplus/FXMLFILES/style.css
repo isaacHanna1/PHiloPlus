@@ -1,0 +1,59 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.left-side{
+    -fx-background-color:#393E46;
+    -fx-vgap: 10;
+}
+.button-shape{
+    -fx-text-fill: #393E46;
+    -fx-background-color:#F2E7D5;    
+    -fx-text-alignment: center;
+    -fx-font-size:16;
+    -fx-font-weight:bold;
+    -fx-border-radius: 0 50 50 0;
+    -fx-background-radius: 0 50 50 0;
+    
+   
+}
+.button-shape:hover{
+        -fx-background-color:#F7F7F7;
+}
+.button-shape:focused{
+        -fx-background-color:#F7F7F7;
+}
+.main-background{
+    
+    -fx-background-color:#F7F7F7;
+
+}
+.label-shape{
+    
+    -fx-text-alignment: center;
+    -fx-font-size:18;
+    -font-weight: bold;
+}
+.text-feilds{
+    -fx-font-size:14;
+    -fx-font-weight:bold;
+    -fx-text-alignment: center_right;
+}
+.action_btn{
+    -fx-text-alignment: center;
+    -fx-font-size:18;
+    -font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );   
+
+}
+.action_btn:hover {
+    -fx-background-color:#2B3467 !important;
+    -fx-text-fill:#000;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );   
+    
+}

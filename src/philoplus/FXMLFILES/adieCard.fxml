@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<!--<?import  philoplus.philoPlusClasses.AutoCompleteComboBox?>-->
+<?import  philoplus.philoPlusClasses.AutoCompleteComboBox?>
+
+<GridPane fx:id="parentGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="757.0" styleClass="main-background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="philoplus.FXMLFILES.AdieCardController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="589.0" minWidth="10.0" prefWidth="589.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="176.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="126.0" minHeight="0.0" prefHeight="58.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="330.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="330.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="330.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="330.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="330.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="330.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="330.0" minHeight="10.0" prefHeight="210.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="116.0" GridPane.columnIndex="1">
+         <children>
+            <Label prefHeight="39.0" prefWidth="317.0" styleClass="label-shape" text="اسم المساعد:">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="txt_technicianName" maxWidth="1.7976931348623157E308" prefHeight="38.0" prefWidth="314.0" promptText="اسم المساعد" styleClass="text-feilds" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="lbl_id" prefHeight="39.0" prefWidth="100.0" styleClass="label-shape">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Label>
+            <Label prefHeight="39.0" prefWidth="163.0" styleClass="label-shape" text="اسم الفني :" />
+            <AutoCompleteComboBox fx:id="comboBox_technicalName" nodeOrientation="RIGHT_TO_LEFT" prefHeight="38.0" prefWidth="235.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin></AutoCompleteComboBox>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="202.0" prefWidth="136.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label prefHeight="67.0" prefWidth="258.0" styleClass="label-shape" text="رقم البطاقة :">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="txt_nationalId" prefHeight="40.0" prefWidth="607.0" promptText="رقم البطاقة" styleClass="text-feilds">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="202.0" prefWidth="136.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Label prefHeight="55.0" prefWidth="258.0" styleClass="label-shape" text="ارقام التليفونات :">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+            <TextField fx:id="txt_telephones" prefHeight="119.0" prefWidth="465.0" promptText="01095125678  -  01205214283" styleClass="text-feilds" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="202.0" prefWidth="136.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Label prefHeight="69.0" prefWidth="258.0" styleClass="label-shape" text="مستندات المتعلقة به:">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <children>
+            <TextField fx:id="txt_imagePath" prefHeight="44.0" prefWidth="269.0" promptText="اضافة" styleClass="text-feilds" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="imgAdd_btn" mnemonicParsing="false" prefHeight="39.0" prefWidth="102.0" styleClass="action_btn">
+               <graphic>
+                  <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="33.0" prefWidth="48.0" text="اضافة" />
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/add.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="showImg_btn" mnemonicParsing="false" prefHeight="31.0" prefWidth="99.0" styleClass="action_btn">
+               <graphic>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="33.0" prefWidth="41.0" text="عرض" />
+                        <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/folder.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="202.0" prefWidth="136.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Label prefHeight="105.0" prefWidth="258.0" styleClass="label-shape" text="بداية العمل بالشركة :">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+         <children>
+            <DatePicker fx:id="date_startWork" nodeOrientation="RIGHT_TO_LEFT" prefHeight="46.0" prefWidth="321.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </DatePicker>
+            <Label prefHeight="111.0" prefWidth="258.0" styleClass="label-shape" text="عدد السنين الخبرة :">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txt_experienceYear" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="286.0" styleClass="text-feilds" text="0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+         <children>
+            <TextField fx:id="txt_notes" prefHeight="36.0" prefWidth="484.0" promptText="الملاحظات" styleClass="text-feilds" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="202.0" prefWidth="136.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <children>
+            <Label prefHeight="82.0" prefWidth="258.0" styleClass="label-shape" text="الملاحظات:">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="549.0" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="add_btn" mnemonicParsing="false" onAction="#insertNewTechnical_adies" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #393E46;" styleClass="action_btn" textFill="WHITE">
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="50.0" text="اضافة" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8-add-new-32.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+            <Button fx:id="edit_btn" mnemonicParsing="false" onAction="#updateAdieData" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #6D9886;" styleClass="action_btn" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="50.0" text="تعديل" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8-pencil-drawing-48.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+            <Button fx:id="delete_btn" mnemonicParsing="false" onAction="#DeleteRecord" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #D2001A;" styleClass="action_btn" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="50.0" text="حذف" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8-close-52.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="151.0" prefWidth="689.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="7">
+         <children>
+            <TableView fx:id="technician_aides_tableView" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#selectItemAdieToTxtBox" prefHeight="185.0" prefWidth="738.0" HBox.hgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="col_id" prefWidth="34.0" text="م" />
+                  <TableColumn fx:id="col_isTechnician" prefWidth="50.0" text="تخصص" />
+                  <TableColumn fx:id="col_fullName" prefWidth="97.0" text="الاسم بالكامل " />
+                  <TableColumn fx:id="col_technicianName" prefWidth="97.0" text="يعمل مع " />
+                  <TableColumn fx:id="col_nationalId" prefWidth="141.0" text="رقم البطاقة " />
+                  <TableColumn fx:id="col_telephones" prefWidth="85.0" text="ارقام التليفونات " />
+                  <TableColumn fx:id="col_start_work" prefWidth="73.0" text="بداية العمل" />
+                  <TableColumn fx:id="col_experienceYear" prefWidth="48.0" text="الخبرة" />
+                  <TableColumn fx:id="col_notes" prefWidth="94.0" text="الملاحظات " />
+               </columns>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox prefHeight="224.0" prefWidth="329.0" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="7" GridPane.vgrow="ALWAYS" />
+   </children>
+</GridPane>

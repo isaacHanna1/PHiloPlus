@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="645.0" styleClass="main-background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="philoplus.FXMLFILES.FatherAcountController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="537.0" minWidth="10.0" prefWidth="537.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="164.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="126.0" minHeight="0.0" prefHeight="83.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="330.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="449.0" minHeight="10.0" prefHeight="263.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="116.0" GridPane.columnIndex="1">
+         <children>
+            <Label prefHeight="61.0" prefWidth="116.0" styleClass="label-shape" text="اسم البند :">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lbl_father_id" prefHeight="61.0" prefWidth="91.0" styleClass="label-shape" textFill="#0000005c" />
+            <TextField fx:id="txt_fatherAccount" alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="297.0" promptText="اسم البند" styleClass="text-feilds">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="549.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="add_btn" mnemonicParsing="false" onAction="#addFatherAccount" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #393E46;" styleClass="action_btn" textFill="WHITE">
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="50.0" text="اضافة" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8-add-new-32.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+            <Button fx:id="edit_btn" mnemonicParsing="false" onAction="#editFatherAccount" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #6D9886;" styleClass="action_btn" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="50.0" text="تعديل" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8-pencil-drawing-48.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+            <Button fx:id="delete_btn" mnemonicParsing="false" onAction="#deleteFatherAccount" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #D2001A;" styleClass="action_btn" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="50.0" text="حذف" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8-close-52.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="151.0" prefWidth="689.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
+         <children>
+            <TableView fx:id="table_fatherAcount" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#selectRecordToTxtBox" prefHeight="242.0" prefWidth="689.0" HBox.hgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="col_id" prefWidth="34.0" text="م" />
+                  <TableColumn fx:id="col_fatherAccount" prefWidth="242.0" text="اسم البند" />
+               </columns>
+               <HBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" />
+   </children>
+</GridPane>

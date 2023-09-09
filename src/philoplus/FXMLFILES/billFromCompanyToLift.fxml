@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import  philoplus.philoPlusClasses.AutoCompleteComboBox?>
+<!--<?import  philoplus.philoPlusClasses.AutoCompleteComboBox?>-->
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="940.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="philoplus.FXMLFILES.BillFromCompanyToLiftController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="832.0" minWidth="10.0" prefWidth="790.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="0.0" prefWidth="135.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="128.0" minHeight="0.0" prefHeight="51.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="295.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="295.0" minHeight="0.0" prefHeight="69.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="296.0" minHeight="10.0" prefHeight="199.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="62.0" prefWidth="342.0" GridPane.columnIndex="1">
+         <children>
+            <Label prefHeight="60.0" prefWidth="115.0" styleClass="label-shape" text="نوع المصعد :" />
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="txt_liftType" editable="false" prefHeight="108.0" prefWidth="172.0" promptText="نوع المصعد" styleClass="text-feilds" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="124.0" prefWidth="121.0" styleClass="label-shape" text="رقم المصعد :" />
+            <AutoCompleteComboBox fx:id="combo_liftNumber" prefHeight="30.0" prefWidth="278.0">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </AutoCompleteComboBox>
+            <Label fx:id="lbl_idOfLift" prefHeight="60.0" prefWidth="51.0" styleClass="label-shape" />
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label prefHeight="58.0" prefWidth="135.0" styleClass="label-shape" text="اسماء الفنيين:" />
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="txt_techncianName" editable="false" prefHeight="30.0" prefWidth="603.0" promptText="اسماء الفنيين " styleClass="text-feilds" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Label prefHeight="58.0" prefWidth="135.0" styleClass="label-shape" text="يتبع موقع:" />
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="55.0" prefWidth="370.0" GridPane.rowIndex="2">
+         <children>
+            <TextField fx:id="siteName" editable="false" prefHeight="30.0" prefWidth="277.0" promptText="يتبع موقع " styleClass="text-feilds" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="55.0" prefWidth="98.0" styleClass="label-shape" text="يتبع شركة :" />
+            <TextField fx:id="txt_company_name" editable="false" prefHeight="30.0" prefWidth="200.0" promptText="يتبع شركة " styleClass="text-feilds" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Label prefHeight="58.0" prefWidth="135.0" styleClass="label-shape" text="عدد الادوار:" />
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="55.0" prefWidth="370.0" GridPane.rowIndex="3">
+         <children>
+            <TextField fx:id="txt_floorNumber" editable="false" onKeyReleased="#calcTotalOFLiftPrice" prefHeight="30.0" prefWidth="165.0" promptText="عدد الادوار " styleClass="text-feilds" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="55.0" prefWidth="99.0" styleClass="label-shape" text="عدد الابيار:" />
+            <TextField fx:id="txt_wellNUmber" editable="false" onKeyReleased="#calcTotalOFLiftPrice" prefHeight="30.0" prefWidth="152.0" promptText="عدد الابيار" styleClass="text-feilds" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="60.0" prefWidth="120.0" styleClass="label-shape" text="تاريخ الفاتورة :" />
+            <DatePicker fx:id="datePicker_bill_date" prefHeight="30.0" prefWidth="157.0">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Label prefHeight="55.0" prefWidth="98.0" styleClass="label-shape" text="عدد الحطاط: " />
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+         <children>
+            <TextField fx:id="txt_priced_floorNumber" onKeyReleased="#calcTotalOFLiftPrice" prefHeight="30.0" prefWidth="170.0" promptText="عدد الحطاط" styleClass="text-feilds" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="58.0" prefWidth="98.0" styleClass="label-shape" text="سعر الحطة :" />
+            <TextField fx:id="txt_priceOfFloor" onKeyReleased="#calcTotalOFLiftPrice" prefHeight="30.0" prefWidth="149.0" promptText="سعر الحطة " styleClass="text-feilds" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="55.0" prefWidth="121.0" styleClass="label-shape" text="الإجمالي :" />
+            <TextField fx:id="txt_total" editable="false" prefHeight="30.0" prefWidth="155.0" promptText="الاجمالي " styleClass="text-feilds" stylesheets="@style.css">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="549.0" GridPane.rowIndex="5">
+         <children>
+            <Button fx:id="add_btn" mnemonicParsing="false" onAction="#insertNewBill" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #393E46;" styleClass="action_btn" textFill="WHITE">
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="50.0" text="اضافة" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8-add-new-32.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="edit_btn" mnemonicParsing="false" onAction="#updateBill" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #6D9886;" styleClass="action_btn" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="50.0" text="تعديل" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8-pencil-drawing-48.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+            <Button fx:id="delete_btn" mnemonicParsing="false" onAction="#deleteBill" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #D2001A;" styleClass="action_btn" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+               <graphic>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="50.0" text="حذف" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/icons8-close-52.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </graphic>
+            </Button>
+            <Label fx:id="lbl_BillID" prefHeight="58.0" prefWidth="93.0" styleClass="label-shape" />
+         </children>
+      </HBox>
+      <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="209.0" prefWidth="940.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="6">
+         <children>
+            <TableView fx:id="table_bill" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#setSelectedRecordToTxt" prefHeight="171.0" prefWidth="940.0" HBox.hgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="col_id" prefWidth="34.0" text="م" />
+                  <TableColumn fx:id="col_BillNumber" prefWidth="59.0" text="م فاتورة" />
+                  <TableColumn fx:id="col_BillDate" prefWidth="85.0" text="تاريخ الفاتورة " />
+                  <TableColumn fx:id="col_liftNum" prefWidth="139.0" text="رقم المصعد " />
+                  <TableColumn fx:id="col_liftType" text="نوع المصعد " />
+                  <TableColumn fx:id="col_techncianName" prefWidth="47.0" text="فنيين" />
+                  <TableColumn fx:id="col_siteName" prefWidth="57.0" text="موقع " />
+                  <TableColumn fx:id="col_comapnyName" prefWidth="74.0" text="يتبع شركة " />
+                  <TableColumn fx:id="col_liftFloorNumber" prefWidth="60.0" text="الادوار" />
+                  <TableColumn fx:id="col_pricedFloorNumber" prefWidth="55.0" text="حطاط" />
+                  <TableColumn fx:id="col_wellNumber" prefWidth="63.0" text="الابيار" />
+                  <TableColumn fx:id="col_priceOfFloor" prefWidth="60.0" text="س الحطة" />
+                  <TableColumn fx:id="col_total" prefWidth="90.0" text="الاجمالي" />
+               </columns>
+               <HBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
